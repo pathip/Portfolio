@@ -7,7 +7,7 @@ export const data = [
         title: "Portfolio",
         link: "",
         materials: [
-            { type: faGithub, link: "https://github.com/pathip" }
+            { type: faGithub, link: "https://github.com/pathip/Portfolio.git" }
         ],
         description: [
             "A simple and minimalist for learning how to develop website by using React and TailwindCSS, designed to be simple and clean"
@@ -20,7 +20,7 @@ export const data = [
     {
         date: "2023 - 2024",
         title: "Univania",
-        link: "https://github.com/pathip/Univania-Cos4106.git",
+        link: "",
         materials: [
             { type: faGithub, link: "https://github.com/pathip/Univania-Cos4106.git" }
         ],

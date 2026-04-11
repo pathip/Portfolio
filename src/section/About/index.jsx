@@ -13,7 +13,7 @@ const About = ({ onInitial,
 
     return (
         <div className='space-y-4 scroll-mt-14' id={SECTION_ID}>
-            <div className='text-xl text-[#FA3811] font-medium px-2'>{title}</div>
+            <div className='text-xl text-blue-600 font-medium px-2'>{title}</div>
             <div>{data.description}</div>
         </div>
     )

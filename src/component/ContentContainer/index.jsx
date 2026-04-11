@@ -21,7 +21,7 @@ const ContentContainer = ({
 
     return (
         <div id={SECTION_ID} className="scroll-mt-14">
-            <div className='text-xl text-[#FA3811] font-medium px-2'>{sectionTitle}</div>
+            <div className='text-xl text-blue-600 font-medium px-2'>{sectionTitle}</div>
             {
                 data.map(({
                     date = "",
@@ -34,7 +34,7 @@ const ContentContainer = ({
                 }, index) => (
                     <div
                         key={`${SECTION_ID}-${index}-${title.replaceAll(" ", "")}`}
-                        className={`grid grid-cols-[25%_75%] rounded-md px-2 py-6 transition-all ${isMouseEnter[`${SECTION_ID}-${index}`] ? "bg-gray-400" : ""}`}
+                        className={`bg-white shadow-md rounded-lg p-6 grid grid-cols-1 md:grid-cols-[30%_70%] transition-all duration-300 hover:shadow-lg hover:scale-105 ${isMouseEnter[`${SECTION_ID}-${index}`] ? "bg-gradient-to-r from-blue-50 to-indigo-50" : ""}`}
                         onMouseEnter={() => setIsMouseEnter({ [`${SECTION_ID}-${index}`]: true })}
                         onMouseLeave={() => setIsMouseEnter({ [`${SECTION_ID}-${index}`]: false })}
                     >

@@ -3,31 +3,53 @@ import About from "../About";
 import { data as experienceData } from "../../content/experience"
 import { data as projectData } from "../../content/project"
 import Footer from "../Footer";
+import { motion } from "framer-motion";
 
 const RightSection = ({ onInitial }) => {
   return (
-    <div className="grid gap-y-5 lg:gap-y-40 px-5">
-      <About
-        title="About"
-        onInitial={onInitial}
-      />
-      <ContentContainer
-        onInitial={onInitial}
-        title="Experience"
-        data={experienceData}
-      />
-      <ContentContainer
-        onInitial={onInitial}
-        title="Project"
-        data={projectData}
-      />
-      <ContentContainer
-        onInitial={onInitial}
-        title="Article"
-        data={experienceData}
-      />
+    <div className="flex flex-col gap-y-16 lg:gap-y-24 lg:py-24">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+      >
+        <About
+          title="About"
+          onInitial={onInitial}
+        />
+      </motion.div>
 
-      <Footer />
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        <ContentContainer
+          onInitial={onInitial}
+          title="Experience"
+          data={experienceData}
+        />
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+      >
+        <ContentContainer
+          onInitial={onInitial}
+          title="Project"
+          data={projectData}
+        />
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+      >
+        <Footer />
+      </motion.div>
     </div>
   )
 }

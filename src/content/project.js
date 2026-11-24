@@ -1,5 +1,6 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import picPortfolio from '../assets/portfolioWebsite.png';
+import picUnivania from '../assets/projectUnivania.png';
 
 export const data = [
     {
@@ -30,6 +31,6 @@ export const data = [
         skill: [
             ["Unity2D", "C#"]
         ],
-        picture: picPortfolio,
+        picture: picUnivania,
     }
 ]

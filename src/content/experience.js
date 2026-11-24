@@ -2,6 +2,21 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export const data = [
     {
+        date: "May 2026 - July 2026",
+        title: "Game Design and Game Development with Storytelling Technique Project : Gravity Wall",
+        materials: [
+            { type: faGithub, link: "https://github.com/pathip/GravityWallsPrototype.git" }
+        ],
+        description: [
+            "During in is project, the  I received the following assignments to help Senior Developer and Senior Animator:",
+            "- Write prototype code for a senior developer to use or refine into a complete version",
+            "- Doing prototype animations as examples for senior animator to refine to complete version"
+        ],
+        skill: [
+            ["Unity3D", "C#"]
+        ],
+    },
+    {
         date: "Sep 2023 - Oct 2023",
         title: "Graduation Project : “Univania”",
         materials: [
